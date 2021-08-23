@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Boots</title>
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="calculatorBoots.css" />
+  </head>
+  <body>
+    <div class="container-sm d-flex justify-content-center align-items-center">
+      <div class="calculator d-grid">
+        <h1 class="cal text-center">Calculator</h1>
+        <input type="text" id="result" placeholder="0" disabled />
+
+        <button class="solve" onclick="clear()">C</button>
+        <button class="solve" onclick="backSpace()">CE</button>
+        <button class="solve" onclick="conCat('%')">%</button>
+        <button class="solve" onclick="conCat('/')">/</button>
+        <button onclick="conCat('7')">7</button>
+        <button onclick="conCat('8')">8</button>
+        <button onclick="conCat('9')">9</button>
+        <button class="solve" onclick="conCat('*')">*</button>
+        <button onclick="conCat('5')">5</button>
+        <button onclick="conCat('6')">6</button>
+        <button onclick="conCat('7')">7</button>
+        <button class="solve" onclick="conCat('+')">+</button>
+        <button onclick="conCat('1')">1</button>
+        <button onclick="conCat('2')">2</button>
+        <button onclick="conCat('3')">3</button>
+        <button class="solve" onclick="conCat('-')">-</button>
+        <button onclick="conCat('0')">0</button>
+        <button onclick="conCat('00')">00</button>
+        <button onclick="conCat('.')">.</button>
+        <button class="equal" onclick="evaluate()">=</button>
+      </div>
+    </div>
+
+    <script src="calculatorBoots.js"></script>
+  </body>
+</html>
