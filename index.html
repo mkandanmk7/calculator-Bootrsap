@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="calculatorBoots.css" />
   </head>
   <body>
-    <div class="container-sm d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center">
       <div class="calculator d-grid">
         <h1 class="cal text-center">Calculator</h1>
         <input type="text" id="result" placeholder="0" disabled />
 
-        <button class="solve" onclick="clear()">C</button>
+        <button class="solve" onclick="del()">C</button>
         <button class="solve" onclick="backSpace()">CE</button>
         <button class="solve" onclick="conCat('%')">%</button>
         <button class="solve" onclick="conCat('/')">/</button>
@@ -38,7 +38,7 @@
         <button onclick="conCat('0')">0</button>
         <button onclick="conCat('00')">00</button>
         <button onclick="conCat('.')">.</button>
-        <button class="equal" onclick="evaluate()">=</button>
+        <button class="equal" onclick="result()">=</button>
       </div>
     </div>
 
